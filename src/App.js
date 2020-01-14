@@ -1,19 +1,21 @@
 import React from "react"
 // import logo from "./logo.svg"
 import "./App.css"
-import Data from "./data"
+import "bootstrap/dist/css/bootstrap.css"
 
 import ProductList from "./components/ProductList"
 import CompanyList from "./components/CompanyList"
 import UserList from "./components/UserList"
+import Stats from "./components/Stats"
 
 function App() {
   return (
     <div className="App">
-      <h1>Main Page</h1>
       <ProductList />
-      <CompanyList />
       <UserList />
+
+      <CompanyList />
+      <Stats />
     </div>
   )
 }
